@@ -1,0 +1,7 @@
+.days{
+display: flex;
+flex-direction: column;
+}
+.d{
+    margin-bottom: 15px;
+}

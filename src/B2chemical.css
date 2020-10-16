@@ -1,0 +1,23 @@
+.b2chemical{
+    align-items: center;
+    /* margin-left: 350px; */
+    justify-content: center;
+}
+.faculty__course{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.faculty{
+    width: 300px;
+    margin: 5px;
+}
+.course{
+    width: 300px;
+    margin: 5px;
+}
+/* .b2chemical>label{
+    margin-left: 50px;
+} */
