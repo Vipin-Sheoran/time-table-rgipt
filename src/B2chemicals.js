@@ -83,9 +83,9 @@ function B2chemicals() {
              }   
             </div>
             
-            {/* <Link to='/chepreview'>
+            <Link to='/chepreview'>
               Preview
-            </Link> */}
+            </Link>
         </div>
     )
 }

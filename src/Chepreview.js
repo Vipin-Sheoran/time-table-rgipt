@@ -28,49 +28,49 @@ function Chepreview() {
   <tbody>
     <tr>
       <td>Monday</td>
-      <td>{MfacultyAt9}</td>
-      <td>{MfacultyAt10}</td>
-      <td>{MfacultyAt11}</td>
-      <td>{MfacultyAt12}</td>
-      <td>{MfacultyAt03}</td>
-      <td>{MfacultyAt04}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       
     </tr>
     <tr>
       <td>Tuesday</td>
-      <td>{TfacultyAt9}</td>
-      <td>{TfacultyAt10}</td>
-      <td>{TfacultyAt11}</td>
-      <td>{TfacultyAt12}</td>
-      <td>{TfacultyAt03}</td>
-      <td>{TfacultyAt04}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday</td>
-      <td >{WfacultyAt9}</td>
-      <td>{WfacultyAt10}</td>
-      <td>{WfacultyAt11}</td>
-      <td>{WfacultyAt12}</td>
-      <td>{WfacultyAt03}</td>
-      <td>{WfacultyAt04}</td>
+      <td ></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>Thursday</td>
-      <td >{THfacultyAt9}</td>
-      <td>{THfacultyAt10}</td>
-      <td>{THfacultyAt11}</td>
-      <td>{THfacultyAt12}</td>
-      <td>{THfacultyAt03}</td>
-      <td>{THfacultyAt04}</td>
+      <td ></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>Friday</td>
-      <td >{FfacultyAt9}</td>
-      <td>{FfacultyAt10}</td>
-      <td>{FfacultyAt11}</td>
-      <td>{FfacultyAt12}</td>
-      <td>{FfacultyAt03}</td>
-      <td>{FfacultyAt04}</td>
+      <td ></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </Table>

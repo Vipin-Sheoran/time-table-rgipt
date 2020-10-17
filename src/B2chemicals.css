@@ -1,6 +1,9 @@
 .days{
 display: flex;
 flex-direction: column;
+/* background-image: url('https://img.collegepravesh.com/2017/08/RGIPT-Amethi.jpg');
+background-repeat: no-repeat;
+background-size: cover; */
 }
 .d{
     margin-bottom: 15px;

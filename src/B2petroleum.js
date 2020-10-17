@@ -8,6 +8,13 @@ function B2petroleum({type}) {
     const [at12,setAt12]=useState('')
     const [at03,setAt03]=useState('')
     const [at04,setAt04]=useState('')
+    const [At9,setat9]=useState('')
+    const [At10,setat10]=useState('')
+    const [At11,setat11]=useState('')
+    const [At12,setat12]=useState('')
+    const [At03,setat03]=useState('')
+    const [At04,setat04]=useState('')
+    const [disabled,setDisabled]=useState(false)
     const nums=['numAt9','numAt10','numAt11','numAt12','numAt03','numAt04']
     const days=['Monday','Tuesday','Wednesday','Thursday','Friday']
     const course=['HTO','CET','FFO','Mathematics','Mass Transfer','Zeology']
@@ -22,7 +29,7 @@ function B2petroleum({type}) {
     const courseHandler=(each)=>{
       let course=[]
       if(each===prof[0]){
-       course='Heat Transfer Operations'
+       course='HTO'
       }
       if(each===prof[1]){
         course='CET'
@@ -37,7 +44,7 @@ function B2petroleum({type}) {
         course='Mass Transfer'
       }
       if(each===prof[5]){
-        course='Zeology'
+        course='Geology'
       }
       return course
     }
@@ -50,140 +57,191 @@ function B2petroleum({type}) {
     let numAt12=[]
   
   if(type[6]===days[0]){
-    numAt9= prof.filter((item) => { 
-      return MfacultyAt9.indexOf(item) === -1 
-    })
-  // console.log(num)
-   numAt10= prof.filter((item) => { 
-    return MfacultyAt10.indexOf(item) === -1 
-  })
+    if(disabled===false){
+      numAt9= prof.filter((item) => { 
+        return MfacultyAt9.indexOf(item) === -1 
+      })
   
-   numAt11= prof.filter((item) => { 
-    return MfacultyAt11.indexOf(item) === -1 
-  })
+      numAt10= prof.filter((item) => { 
+        return MfacultyAt10.indexOf(item) === -1 
+      })
+      
+      numAt11= prof.filter((item) => { 
+        return MfacultyAt11.indexOf(item) === -1 
+      })
   
-   numAt12= prof.filter((item) => { 
-    return MfacultyAt12.indexOf(item) === -1 
-  })
+      numAt12= prof.filter((item) => { 
+        return MfacultyAt12.indexOf(item) === -1 
+      })
   
-   numAt03= prof.filter((item) => { 
-    return MfacultyAt03.indexOf(item) === -1 
-  })
+      numAt03= prof.filter((item) => { 
+        return MfacultyAt03.indexOf(item) === -1 
+      })
   
-   numAt04= prof.filter((item) => { 
-    return MfacultyAt04.indexOf(item) === -1 
-  })
+      numAt04= prof.filter((item) => { 
+        return MfacultyAt04.indexOf(item) === -1 
+      })
+  
+    }else{
+      numAt9=[At9]
+      numAt10=[At10]
+      numAt11=[At11]
+      numAt12=[At12]
+      numAt03=[At03]
+      numAt04=[At04]
+    }
   }
   
   
   if(type[6]===days[1]){
-    numAt9= prof.filter((item) => { 
-      return TfacultyAt9.indexOf(item) === -1 
-    })
-  // console.log(num)
-   numAt10= prof.filter((item) => { 
-    return TfacultyAt10.indexOf(item) === -1 
-  })
+    if(disabled===false){
+      numAt9= prof.filter((item) => { 
+        return TfacultyAt9.indexOf(item) === -1 
+      })
   
-   numAt11= prof.filter((item) => { 
-    return TfacultyAt11.indexOf(item) === -1 
-  })
+      numAt10= prof.filter((item) => { 
+        return TfacultyAt10.indexOf(item) === -1 
+      })
+      
+      numAt11= prof.filter((item) => { 
+        return TfacultyAt11.indexOf(item) === -1 
+      })
   
-   numAt12= prof.filter((item) => { 
-    return TfacultyAt12.indexOf(item) === -1 
-  })
+      numAt12= prof.filter((item) => { 
+        return TfacultyAt12.indexOf(item) === -1 
+      })
   
-   numAt03= prof.filter((item) => { 
-    return TfacultyAt03.indexOf(item) === -1 
-  })
+      numAt03= prof.filter((item) => { 
+        return TfacultyAt03.indexOf(item) === -1 
+      })
   
-   numAt04= prof.filter((item) => { 
-    return TfacultyAt04.indexOf(item) === -1 
-  })
+      numAt04= prof.filter((item) => { 
+        return TfacultyAt04.indexOf(item) === -1 
+      })
+  
+    }else{
+      numAt9=[At9]
+      numAt10=[At10]
+      numAt11=[At11]
+      numAt12=[At12]
+      numAt03=[At03]
+      numAt04=[At04]
+    }
   }
   
   if(type[6]===days[2]){
-    numAt9= prof.filter((item) => { 
-      return WfacultyAt9.indexOf(item) === -1 
-    })
-  // console.log(num)
-   numAt10= prof.filter((item) => { 
-    return WfacultyAt10.indexOf(item) === -1 
-  })
+    if(disabled===false){
+      numAt9= prof.filter((item) => { 
+        return WfacultyAt9.indexOf(item) === -1 
+      })
   
-   numAt11= prof.filter((item) => { 
-    return WfacultyAt11.indexOf(item) === -1 
-  })
+      numAt10= prof.filter((item) => { 
+        return WfacultyAt10.indexOf(item) === -1 
+      })
+      
+      numAt11= prof.filter((item) => { 
+        return WfacultyAt11.indexOf(item) === -1 
+      })
   
-   numAt12= prof.filter((item) => { 
-    return WfacultyAt12.indexOf(item) === -1 
-  })
+      numAt12= prof.filter((item) => { 
+        return WfacultyAt12.indexOf(item) === -1 
+      })
   
-   numAt03= prof.filter((item) => { 
-    return WfacultyAt03.indexOf(item) === -1 
-  })
+      numAt03= prof.filter((item) => { 
+        return WfacultyAt03.indexOf(item) === -1 
+      })
   
-   numAt04= prof.filter((item) => { 
-    return WfacultyAt04.indexOf(item) === -1 
-  })
+      numAt04= prof.filter((item) => { 
+        return WfacultyAt04.indexOf(item) === -1 
+      })
+  
+    }else{
+      numAt9=[At9]
+      numAt10=[At10]
+      numAt11=[At11]
+      numAt12=[At12]
+      numAt03=[At03]
+      numAt04=[At04]
+    }
   }
   
   if(type[6]===days[3]){
-    numAt9= prof.filter((item) => { 
-      return THfacultyAt9.indexOf(item) === -1 
-    })
-  // console.log(num)
-   numAt10= prof.filter((item) => { 
-    return THfacultyAt10.indexOf(item) === -1 
-  })
+    if(disabled===false){
+      numAt9= prof.filter((item) => { 
+        return THfacultyAt9.indexOf(item) === -1 
+      })
   
-   numAt11= prof.filter((item) => { 
-    return THfacultyAt11.indexOf(item) === -1 
-  })
+      numAt10= prof.filter((item) => { 
+        return THfacultyAt10.indexOf(item) === -1 
+      })
+      
+      numAt11= prof.filter((item) => { 
+        return THfacultyAt11.indexOf(item) === -1 
+      })
   
-   numAt12= prof.filter((item) => { 
-    return THfacultyAt12.indexOf(item) === -1 
-  })
+      numAt12= prof.filter((item) => { 
+        return THfacultyAt12.indexOf(item) === -1 
+      })
   
-   numAt03= prof.filter((item) => { 
-    return THfacultyAt03.indexOf(item) === -1 
-  })
+      numAt03= prof.filter((item) => { 
+        return THfacultyAt03.indexOf(item) === -1 
+      })
   
-   numAt04= prof.filter((item) => { 
-    return THfacultyAt04.indexOf(item) === -1 
-  })
+      numAt04= prof.filter((item) => { 
+        return THfacultyAt04.indexOf(item) === -1 
+      })
+  
+    }else{
+      numAt9=[At9]
+      numAt10=[At10]
+      numAt11=[At11]
+      numAt12=[At12]
+      numAt03=[At03]
+      numAt04=[At04]
+    }
   }
   
   if(type[6]===days[4]){
-    numAt9= prof.filter((item) => { 
-      return FfacultyAt9.indexOf(item) === -1 
-    })
-  // console.log(num)
-   numAt10= prof.filter((item) => { 
-    return FfacultyAt10.indexOf(item) === -1 
-  })
+    if(disabled===false){
+      numAt9= prof.filter((item) => { 
+        return FfacultyAt9.indexOf(item) === -1 
+      })
   
-   numAt11= prof.filter((item) => { 
-    return FfacultyAt11.indexOf(item) === -1 
-  })
+      numAt10= prof.filter((item) => { 
+        return FfacultyAt10.indexOf(item) === -1 
+      })
+      
+      numAt11= prof.filter((item) => { 
+        return FfacultyAt11.indexOf(item) === -1 
+      })
   
-   numAt12= prof.filter((item) => { 
-    return FfacultyAt12.indexOf(item) === -1 
-  })
+      numAt12= prof.filter((item) => { 
+        return FfacultyAt12.indexOf(item) === -1 
+      })
   
-   numAt03= prof.filter((item) => { 
-    return FfacultyAt03.indexOf(item) === -1 
-  })
+      numAt03= prof.filter((item) => { 
+        return FfacultyAt03.indexOf(item) === -1 
+      })
   
-   numAt04= prof.filter((item) => { 
-    return FfacultyAt04.indexOf(item) === -1 
-  })
+      numAt04= prof.filter((item) => { 
+        return FfacultyAt04.indexOf(item) === -1 
+      })
+  
+    }else{
+      numAt9=[At9]
+      numAt10=[At10]
+      numAt11=[At11]
+      numAt12=[At12]
+      numAt03=[At03]
+      numAt04=[At04]
+    }
   }
   
 
   const submitHandler=(e)=>{
     e.preventDefault()
     console.log('here it is',numAt9)
+    setDisabled(true)
    dispatch({
      type:type[0],
      item:at9
@@ -215,22 +273,27 @@ function B2petroleum({type}) {
    const handler9=(e)=>{
     setAt9(e.target.value) 
     setAt10(e.target.value)
+    setat9(e.target.value)
    }
    const handler10=(e)=>{
     setAt11(e.target.value) 
     setAt10(e.target.value)
+    setat10(e.target.value)
    }
    const handler11=(e)=>{
     setAt11(e.target.value) 
     setAt12(e.target.value)
+    setat11(e.target.value)
    }
    const handler12=(e)=>{
     setAt12(e.target.value) 
     setAt03(e.target.value)
+    setat12(e.target.value)
    }
    const handler03=(e)=>{
     setAt03(e.target.value) 
     setAt04(e.target.value)
+    setat03(e.target.value)
    }
    const handler04=(e)=>{
     setAt04(e.target.value)
@@ -332,7 +395,7 @@ function B2petroleum({type}) {
              </div>
            </div>
 
-           <input type='submit' onClick={submitHandler}></input>
+           <input type='submit' disabled={disabled} onClick={submitHandler}></input>
            </form>
         </div>
     )

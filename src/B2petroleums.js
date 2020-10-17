@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import B2petroleum from './B2petroleum'
 import './B2chemicals.css'
 import {Link} from 'react-router-dom'
+import Body from './Body'
 
 function B2petroleums() {
 
@@ -73,6 +74,7 @@ function B2petroleums() {
     return (
         <div className='b2chemicals'>
            <div className='days'>
+             
              {
                  days.map((each,index)=>{
                 return <div className='d'> <button onClick={typeHandler(each)}>{each}</button>

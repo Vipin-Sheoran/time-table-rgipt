@@ -12,7 +12,7 @@ function Body() {
             <div className='button'>
             <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
-             B.Tech 2nd Year
+             Demo
              </Dropdown.Toggle>
 
              <Dropdown.Menu>
