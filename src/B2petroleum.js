@@ -24,7 +24,19 @@ function B2petroleum({type}) {
       TfacultyAt9,TfacultyAt10,TfacultyAt11,TfacultyAt12,TfacultyAt04,TfacultyAt03,
       WfacultyAt9,WfacultyAt10,WfacultyAt11,WfacultyAt12,WfacultyAt04,WfacultyAt03,
       THfacultyAt9,THfacultyAt10,THfacultyAt11,THfacultyAt12,THfacultyAt04,THfacultyAt03,
-      FfacultyAt9,FfacultyAt10,FfacultyAt11,FfacultyAt12,FfacultyAt04,FfacultyAt03},dispatch]=useStateValue()
+      FfacultyAt9,FfacultyAt10,FfacultyAt11,FfacultyAt12,FfacultyAt04,FfacultyAt03,
+    
+      CMfacultyAt9,CMfacultyAt10,CMfacultyAt11,CMfacultyAt12,CMfacultyAt04,CMfacultyAt03,
+      CTfacultyAt9,CTfacultyAt10,CTfacultyAt11,CTfacultyAt12,CTfacultyAt04,CTfacultyAt03,
+      CWfacultyAt9,CWfacultyAt10,CWfacultyAt11,CWfacultyAt12,CWfacultyAt04,CWfacultyAt03,
+      CTHfacultyAt9,CTHfacultyAt10,CTHfacultyAt11,CTHfacultyAt12,CTHfacultyAt04,CTHfacultyAt03,
+      CFfacultyAt9,CFfacultyAt10,CFfacultyAt11,CFfacultyAt12,CFfacultyAt04,CFfacultyAt03,
+    
+      PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt04,PMfacultyAt03,
+      PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt04,PTfacultyAt03,
+      PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt04,PWfacultyAt03,
+      PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt04,PTHfacultyAt03,
+      PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt04,PFfacultyAt03},dispatch]=useStateValue()
 
     const courseHandler=(each)=>{
       let course=[]
@@ -58,22 +70,43 @@ function B2petroleum({type}) {
   
   if(type[6]===days[0]){
     if(disabled===false){
-      numAt9= prof.filter((item) => { 
-        return MfacultyAt9.indexOf(item) === -1 
-      })
-  
+      
+       
+        numAt9= prof.filter((item) => { 
+          return MfacultyAt9.indexOf(item) === -1 
+        })
+       
+        if(CMfacultyAt9[0] && CMfacultyAt9[0].length>0){
+          numAt9=numAt9.filter((num)=>{
+            return num!==prof[3]
+          })
+        }
+
+
       numAt10= prof.filter((item) => { 
         return MfacultyAt10.indexOf(item) === -1 
       })
-      
+      if(CMfacultyAt10[0]&&CMfacultyAt10[0].length>0){
+        numAt10=numAt10.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
       numAt11= prof.filter((item) => { 
         return MfacultyAt11.indexOf(item) === -1 
       })
-  
+      if(CMfacultyAt11[0] && CMfacultyAt11[0].length>0){
+        numAt11=numAt11.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
       numAt12= prof.filter((item) => { 
         return MfacultyAt12.indexOf(item) === -1 
       })
-  
+      if(CMfacultyAt12[0]&&CMfacultyAt12[0].length>0){
+        numAt12=numAt12.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
       numAt03= prof.filter((item) => { 
         return MfacultyAt03.indexOf(item) === -1 
       })
@@ -81,14 +114,46 @@ function B2petroleum({type}) {
       numAt04= prof.filter((item) => { 
         return MfacultyAt04.indexOf(item) === -1 
       })
+
+      if(CMfacultyAt03[0]&&CMfacultyAt03[0].length>0){
+        numAt03=numAt03.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CMfacultyAt04[0]&&CMfacultyAt04[0].length>0){
+        numAt04=numAt04.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+
+      if(PMfacultyAt9[0]&&PMfacultyAt9[0].length>0){
+        setDisabled(true)
+      }
+      if(PMfacultyAt10[0]&&PMfacultyAt10[0].length>0){
+        setDisabled(true)
+      }
+      if(PMfacultyAt11[0]&&PMfacultyAt11[0].length>0){
+        setDisabled(true)
+      }
+      if(PMfacultyAt12[0]&&PMfacultyAt12[0].length>0){
+        setDisabled(true)
+      }
+      if(PMfacultyAt03[0]&&PMfacultyAt03[0].length>0){
+        setDisabled(true)
+      }
+      if(PMfacultyAt04[0]&&PMfacultyAt04[0].length>0){
+        setDisabled(true)
+      }
+
+      
   
     }else{
-      numAt9=[At9]
-      numAt10=[At10]
-      numAt11=[At11]
-      numAt12=[At12]
-      numAt03=[At03]
-      numAt04=[At04]
+      numAt9=[PMfacultyAt9[0]]
+      numAt10=[PMfacultyAt10[0]]
+      numAt11=[PMfacultyAt11[0]]
+      numAt12=[PMfacultyAt12[0]]
+      numAt03=[PMfacultyAt03[0]]
+      numAt04=[PMfacultyAt04[0]]
     }
   }
   
@@ -118,14 +183,62 @@ function B2petroleum({type}) {
       numAt04= prof.filter((item) => { 
         return TfacultyAt04.indexOf(item) === -1 
       })
-  
+
+      if(CTfacultyAt9[0]&&CTfacultyAt9[0].length>0){
+        numAt9=numAt9.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTfacultyAt10[0]&&CTfacultyAt10[0].length>0){
+        numAt10=numAt10.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTfacultyAt11[0]&&CTfacultyAt11[0].length>0){
+        numAt11=numAt11.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTfacultyAt12[0]&&CTfacultyAt12[0].length>0){
+        numAt12=numAt12.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTfacultyAt03[0]&&CTfacultyAt03[0].length>0){
+        numAt03=numAt03.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTfacultyAt04[0]&&CTfacultyAt04[0].length>0){
+        numAt04=numAt04.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(PTfacultyAt9[0]&&PTfacultyAt9[0].length>0){
+        setDisabled(true)
+      }
+      if(PTfacultyAt10[0]&&PTfacultyAt10[0].length>0){
+        setDisabled(true)
+      }
+      if(PTfacultyAt11[0]&&PTfacultyAt11[0].length>0){
+        setDisabled(true)
+      }
+      if(PTfacultyAt12[0]&&PTfacultyAt12[0].length>0){
+        setDisabled(true)
+      }
+      if(PTfacultyAt03[0]&&PTfacultyAt03[0].length>0){
+        setDisabled(true)
+      }
+      if(PTfacultyAt04[0]&&PTfacultyAt04[0].length>0){
+        setDisabled(true)
+      }
     }else{
-      numAt9=[At9]
-      numAt10=[At10]
-      numAt11=[At11]
-      numAt12=[At12]
-      numAt03=[At03]
-      numAt04=[At04]
+      numAt9=[PTfacultyAt9[0]]      
+      numAt10=[PTfacultyAt10[0]]
+      numAt11=[PTfacultyAt11[0]]
+      numAt12=[PTfacultyAt12[0]]
+      numAt03=[PTfacultyAt03[0]]
+      numAt04=[PTfacultyAt04[0]]
     }
   }
   
@@ -154,14 +267,61 @@ function B2petroleum({type}) {
       numAt04= prof.filter((item) => { 
         return WfacultyAt04.indexOf(item) === -1 
       })
-  
+      if(CWfacultyAt9[0]&&CWfacultyAt9[0].length>0){
+        numAt9=numAt9.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CWfacultyAt10[0]&&CWfacultyAt10[0].length>0){
+        numAt10=numAt10.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CWfacultyAt11[0]&&CWfacultyAt11[0].length>0){
+        numAt11=numAt11.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CWfacultyAt12[0]&&CWfacultyAt12[0].length>0){
+        numAt12=numAt12.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CWfacultyAt03[0]&&CWfacultyAt03[0].length>0){
+        numAt03=numAt03.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CWfacultyAt04[0]&&CWfacultyAt04[0].length>0){
+        numAt04=numAt04.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(PWfacultyAt9[0]&&PWfacultyAt9[0].length>0){
+        setDisabled(true)
+      }
+      if(PWfacultyAt10[0]&&PWfacultyAt10[0].length>0){
+        setDisabled(true)
+      }
+      if(PWfacultyAt11[0]&&PWfacultyAt11[0].length>0){
+        setDisabled(true)
+      }
+      if(PWfacultyAt12[0]&&PWfacultyAt12[0].length>0){
+        setDisabled(true)
+      }
+      if(PWfacultyAt03[0]&&PWfacultyAt03[0].length>0){
+        setDisabled(true)
+      }
+      if(PWfacultyAt04[0]&&PWfacultyAt04[0].length>0){
+        setDisabled(true)
+      }
     }else{
-      numAt9=[At9]
-      numAt10=[At10]
-      numAt11=[At11]
-      numAt12=[At12]
-      numAt03=[At03]
-      numAt04=[At04]
+      numAt9=[PWfacultyAt9[0]]        
+      numAt10=[PWfacultyAt10[0]]
+      numAt11=[PWfacultyAt11[0]]
+      numAt12=[PWfacultyAt12[0]]
+      numAt03=[PWfacultyAt03[0]]
+      numAt04=[PWfacultyAt04[0]]
     }
   }
   
@@ -190,15 +350,63 @@ function B2petroleum({type}) {
       numAt04= prof.filter((item) => { 
         return THfacultyAt04.indexOf(item) === -1 
       })
-  
+      if(CTHfacultyAt9[0]&&CTHfacultyAt9[0].length>0){
+        numAt9=numAt9.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTHfacultyAt10[0]&&CTHfacultyAt10[0].length>0){
+        numAt10=numAt10.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTHfacultyAt11[0]&&CTHfacultyAt11[0].length>0){
+        numAt11=numAt11.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTHfacultyAt12[0]&&CTHfacultyAt12[0].length>0){
+        numAt12=numAt12.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTHfacultyAt03[0]&&CTHfacultyAt03[0].length>0){
+        numAt03=numAt03.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CTHfacultyAt04[0]&&CTHfacultyAt04[0].length>0){
+        numAt04=numAt04.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(PTHfacultyAt9[0]&&PTHfacultyAt9[0].length>0){
+        setDisabled(true)
+      }
+      if(PTHfacultyAt10[0]&&PTHfacultyAt10[0].length>0){
+        setDisabled(true)
+      }
+      if(PTHfacultyAt11[0]&&PTHfacultyAt11[0].length>0){
+        setDisabled(true)
+      }
+      if(PTHfacultyAt12[0]&&PTHfacultyAt12[0].length>0){
+        setDisabled(true)
+      }
+      if(PTHfacultyAt03[0]&&PTHfacultyAt03[0].length>0){
+        setDisabled(true)
+      }
+      if(PTHfacultyAt04[0]&&PTHfacultyAt04[0].length>0){
+        setDisabled(true)
+      }
     }else{
-      numAt9=[At9]
-      numAt10=[At10]
-      numAt11=[At11]
-      numAt12=[At12]
-      numAt03=[At03]
-      numAt04=[At04]
+      numAt9=[PTHfacultyAt9[0]]
+      numAt10=[PTHfacultyAt10[0]]
+      numAt11=[PTHfacultyAt11[0]]
+      numAt12=[PTHfacultyAt12[0]]
+      numAt03=[PTHfacultyAt03[0]]
+      numAt04=[PTHfacultyAt04[0]]
     }
+    
   }
   
   if(type[6]===days[4]){
@@ -226,21 +434,68 @@ function B2petroleum({type}) {
       numAt04= prof.filter((item) => { 
         return FfacultyAt04.indexOf(item) === -1 
       })
-  
+      if(CFfacultyAt9[0]&&CFfacultyAt9[0].length>0){
+        numAt9=numAt9.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CFfacultyAt10[0]&&CFfacultyAt10[0].length>0){
+        numAt10=numAt10.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CFfacultyAt11[0]&&CFfacultyAt11[0].length>0){
+        numAt11=numAt11.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CFfacultyAt12[0]&&CFfacultyAt12[0].length>0){
+        numAt12=numAt12.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CFfacultyAt03[0]&&CFfacultyAt03[0].length>0){
+        numAt03=numAt03.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(CFfacultyAt04[0]&&CFfacultyAt04[0].length>0){
+        numAt04=numAt04.filter((num)=>{
+          return num!==prof[3]
+        })
+      }
+      if(PFfacultyAt9[0]&&PFfacultyAt9[0].length>0){
+        setDisabled(true)
+      }
+      if(PFfacultyAt10[0]&&PFfacultyAt10[0].length>0){
+        setDisabled(true)
+      }
+      if(PFfacultyAt11[0]&&PFfacultyAt11[0].length>0){
+        setDisabled(true)
+      }
+      if(PFfacultyAt12[0]&&PFfacultyAt12[0].length>0){
+        setDisabled(true)
+      }
+      if(PFfacultyAt03[0]&&PFfacultyAt03[0].length>0){
+        setDisabled(true)
+      }
+      if(PFfacultyAt04[0]&&PFfacultyAt04[0].length>0){
+        setDisabled(true)
+      }
     }else{
-      numAt9=[At9]
-      numAt10=[At10]
-      numAt11=[At11]
-      numAt12=[At12]
-      numAt03=[At03]
-      numAt04=[At04]
+      numAt9=[PFfacultyAt9[0]]
+      numAt10=[PFfacultyAt10[0]]
+      numAt11=[PFfacultyAt11[0]]
+      numAt12=[PFfacultyAt12[0]]
+      numAt03=[PFfacultyAt03[0]]
+      numAt04=[PFfacultyAt04[0]]
     }
   }
   
 
   const submitHandler=(e)=>{
     e.preventDefault()
-    console.log('here it is',numAt9)
+    console.log(PMfacultyAt9)
     setDisabled(true)
    dispatch({
      type:type[0],
@@ -268,31 +523,60 @@ function B2petroleum({type}) {
      type:type[5],
      item:at04
    })
+
+   dispatch({
+    type:type[7],
+    item:at9
+  })
+
+  dispatch({
+    type:type[8],
+    item:at10
+  })
+
+  dispatch({
+    type:type[9],
+    item:at11
+  })
+  dispatch({
+    type:type[10],
+    item:at12
+  })
+  dispatch({
+    type:type[11],
+    item:at03
+  })
+  dispatch({
+    type:type[12],
+    item:at04
+  })
    
    } 
    const handler9=(e)=>{
+     
     setAt9(e.target.value) 
-    setAt10(e.target.value)
+    // setAt10(e.target.value)
     setat9(e.target.value)
    }
    const handler10=(e)=>{
-    setAt11(e.target.value) 
+   console.log(PMfacultyAt9[0]==='Dr. Alpesh')
+    // setAt11(e.target.value) 
     setAt10(e.target.value)
     setat10(e.target.value)
    }
    const handler11=(e)=>{
     setAt11(e.target.value) 
-    setAt12(e.target.value)
+    // setAt12(e.target.value)
     setat11(e.target.value)
    }
    const handler12=(e)=>{
     setAt12(e.target.value) 
-    setAt03(e.target.value)
+    // setAt03(e.target.value)
     setat12(e.target.value)
    }
    const handler03=(e)=>{
     setAt03(e.target.value) 
-    setAt04(e.target.value)
+    // setAt04(e.target.value)
     setat03(e.target.value)
    }
    const handler04=(e)=>{

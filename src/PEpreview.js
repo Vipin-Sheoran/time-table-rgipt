@@ -5,18 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Chepreview({preview}) {
 
-    const [{CMfacultyAt9,CMfacultyAt10,CMfacultyAt11,CMfacultyAt12,CMfacultyAt04,CMfacultyAt03,
-        CTfacultyAt9,CTfacultyAt10,CTfacultyAt11,CTfacultyAt12,CTfacultyAt04,CTfacultyAt03,
-        CWfacultyAt9,CWfacultyAt10,CWfacultyAt11,CWfacultyAt12,CWfacultyAt04,CWfacultyAt03,
-        CTHfacultyAt9,CTHfacultyAt10,CTHfacultyAt11,CTHfacultyAt12,CTHfacultyAt04,CTHfacultyAt03,
-        CFfacultyAt9,CFfacultyAt10,CFfacultyAt11,CFfacultyAt12,CFfacultyAt04,CFfacultyAt03},dispatch]=useStateValue()
+    const [{PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt04,PMfacultyAt03,
+        PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt04,PTfacultyAt03,
+        PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt04,PWfacultyAt03,
+        PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt04,PTHfacultyAt03,
+        PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt04,PFfacultyAt03},dispatch]=useStateValue()
    
-        const monday=[CMfacultyAt9,CMfacultyAt10,CMfacultyAt11,CMfacultyAt12,CMfacultyAt03,CMfacultyAt04]
-        const tuesday=[CTfacultyAt9,CTfacultyAt10,CTfacultyAt11,CTfacultyAt12,CTfacultyAt03,CTfacultyAt04]
-        const wednesday=[CWfacultyAt9,CWfacultyAt10,CWfacultyAt11,CWfacultyAt12,CWfacultyAt03,CWfacultyAt04]
-        const thursday=[CTHfacultyAt9,CTHfacultyAt10,CTHfacultyAt11,CTHfacultyAt12,CTHfacultyAt03,CTHfacultyAt04]
-        const friday=[CFfacultyAt9,CFfacultyAt10,CFfacultyAt11,CFfacultyAt12,CFfacultyAt03,CFfacultyAt04]
-        const prof=['Dr. Milan Kumar','Dr. Amit Ranjan','Dr. Koushik','Dr. Bala','Dr. Rakesh','Dr. Gunjan']
+        const monday=[PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt03,PMfacultyAt04]
+        const tuesday=[PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt03,PTfacultyAt04]
+        const wednesday=[PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt03,PWfacultyAt04]
+        const thursday=[PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt03,PTHfacultyAt04]
+        const friday=[PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt03,PFfacultyAt04]
+        const prof=['Dr. Milan Kumar','Dr. Amit Ranjan','Dr. Koushik','Dr. Alpesh','Dr. Rakesh','Dr. Gunjan']
       
         const courseHandler=(each)=>{
           let course=[]
@@ -30,7 +30,7 @@ function Chepreview({preview}) {
             course='FFO'
           }
           if(each[0]===prof[3]){
-            course='Petroleum Refining'
+            course='Mathematics'
           }
           if(each[0]===prof[4]){
             course='Mass Transfer'
