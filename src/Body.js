@@ -16,9 +16,9 @@ function Body() {
              </Dropdown.Toggle>
 
              <Dropdown.Menu>
-             <Dropdown.Item><Link to='/btech2chemical'>Chemical</Link></Dropdown.Item>
+             <Dropdown.Item><Link to='/btech2chemical'>Batch C</Link></Dropdown.Item>
              
-             <Dropdown.Item><Link to='/btech2petroleum'>Petroleum</Link></Dropdown.Item>
+             <Dropdown.Item><Link to='/btech2petroleum'>Batch P</Link></Dropdown.Item>
              </Dropdown.Menu>
             </Dropdown>
             </div>
