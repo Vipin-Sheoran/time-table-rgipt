@@ -5,18 +5,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Chepreview({preview}) {
 
-    const [{PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt04,PMfacultyAt03,
-        PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt04,PTfacultyAt03,
-        PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt04,PWfacultyAt03,
-        PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt04,PTHfacultyAt03,
-        PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt04,PFfacultyAt03},dispatch]=useStateValue()
+    const [{PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt04,PMfacultyAt03,PMfacultyAt05,
+        PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt04,PTfacultyAt03,PTfacultyAt05,
+        PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt04,PWfacultyAt03,PWfacultyAt05,
+        PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt04,PTHfacultyAt03,PTHfacultyAt05,
+        PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt04,PFfacultyAt03,PFfacultyAt05,
+      
+        COMfacultyAt9,COMfacultyAt10,COMfacultyAt11,COMfacultyAt12,COMfacultyAt03,COMfacultyAt04,COMfacultyAt05,
+        COTfacultyAt9,COTfacultyAt10,COTfacultyAt11,COTfacultyAt12,COTfacultyAt04,COTfacultyAt03,COTfacultyAt05,
+        COWfacultyAt9,COWfacultyAt10,COWfacultyAt11,COWfacultyAt12,COWfacultyAt04,COWfacultyAt03,COWfacultyAt05,
+        COTHfacultyAt9,COTHfacultyAt10,COTHfacultyAt11,COTHfacultyAt12,COTHfacultyAt04,COTHfacultyAt03,COTHfacultyAt05,
+        COFfacultyAt9,COFfacultyAt10,COFfacultyAt11,COFfacultyAt12,COFfacultyAt04,COFfacultyAt03,COFfacultyAt05},dispatch]=useStateValue()
    
-        const monday=[PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt03,PMfacultyAt04]
-        const tuesday=[PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt03,PTfacultyAt04]
-        const wednesday=[PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt03,PWfacultyAt04]
-        const thursday=[PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt03,PTHfacultyAt04]
-        const friday=[PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt03,PFfacultyAt04]
-        const prof=['Dr. Milan Kumar','Dr. Amit Ranjan','Dr. Koushik','Dr. Alpesh','Dr. Rakesh','Dr. Gunjan']
+        const monday=[PMfacultyAt9,PMfacultyAt10,PMfacultyAt11,PMfacultyAt12,PMfacultyAt03,PMfacultyAt04,PMfacultyAt05]
+        const tuesday=[PTfacultyAt9,PTfacultyAt10,PTfacultyAt11,PTfacultyAt12,PTfacultyAt03,PTfacultyAt04,PTfacultyAt05]
+        const wednesday=[PWfacultyAt9,PWfacultyAt10,PWfacultyAt11,PWfacultyAt12,PWfacultyAt03,PWfacultyAt04,PWfacultyAt05]
+        const thursday=[PTHfacultyAt9,PTHfacultyAt10,PTHfacultyAt11,PTHfacultyAt12,PTHfacultyAt03,PTHfacultyAt04,PTHfacultyAt05]
+        const friday=[PFfacultyAt9,PFfacultyAt10,PFfacultyAt11,PFfacultyAt12,PFfacultyAt03,PFfacultyAt04,PFfacultyAt05]
+
+        const courseM=[COMfacultyAt9,COMfacultyAt10,COMfacultyAt11,COMfacultyAt12,COMfacultyAt03,COMfacultyAt04,COMfacultyAt05]
+        const courseT=[COTfacultyAt9,COTfacultyAt10,COTfacultyAt11,COTfacultyAt12,COTfacultyAt03,COTfacultyAt04,COTfacultyAt05]
+        const courseW=[COWfacultyAt9,COWfacultyAt10,COWfacultyAt11,COWfacultyAt12,COWfacultyAt03,COWfacultyAt04,COWfacultyAt05]
+        const courseTH=[COTHfacultyAt9,COTHfacultyAt10,COTHfacultyAt11,COTHfacultyAt12,COTHfacultyAt03,COTHfacultyAt04,COTHfacultyAt05]
+        const courseF=[COFfacultyAt9,COFfacultyAt10,COFfacultyAt11,COFfacultyAt12,COFfacultyAt03,COFfacultyAt04,COFfacultyAt05]
+        const prof=['Dr. Milan Kumar','Dr. Amit Ranjan','Dr. Koushik','Dr. Alpesh','Dr. Rakesh','Dr. AKS',]
       
         const courseHandler=(each)=>{
           let course=[]
@@ -36,7 +48,7 @@ function Chepreview({preview}) {
             course='Mass Transfer'
           }
           if(each[0]===prof[5]){
-            course='SFM'
+            course='Zeology'
           }
           return course
         }
@@ -49,11 +61,12 @@ function Chepreview({preview}) {
     <tr>
       <th>days</th>
       <th>9.00am to 10.00am</th>
-      <th>10.00am to 11.00am</th>
-      <th>11.00am  to 12.00am</th>
-      <th>12.00pm to 1.00pm</th>
+      <th>10.15am to 11.15am</th>
+      <th>11.30am  to 12.30am</th>
+      <th>12.45pm to 1.45pm</th>
       <th>3.00pm  to 4.00pm</th>
-      <th>4.00pm  to 5.00pm</th>
+      <th>4.15pm  to 5.15pm</th>
+      <th>5.30pm  to 6.30pm</th>
     </tr>
   </thead>
   <tbody>
@@ -61,7 +74,7 @@ function Chepreview({preview}) {
       <td>Monday</td>
       {
         monday.map((each,index)=>{
-        return <td>{each} <br></br>{courseHandler(each)}</td>
+        return <td>{each} <br></br>{courseM[index]}</td>
          })
       }
      
@@ -71,32 +84,32 @@ function Chepreview({preview}) {
     <tr>
       <td>Tuesday</td>
       {
-        tuesday.map(each=>{
-         return <td>{each}<br></br> {courseHandler(each)}</td>
+        tuesday.map((each,index)=>{
+         return <td>{each}<br></br> {courseT[index]}</td>
          })
       }
     </tr>
     <tr>
       <td>Wednesday</td>
       {
-        wednesday.map(each=>{
-         return <td>{each}<br></br> {courseHandler(each)}</td>
+        wednesday.map((each,index)=>{
+         return <td>{each}<br></br> {courseW[index]}</td>
          })
       }
     </tr>
     <tr>
       <td>Thursday</td>
       {
-        thursday.map(each=>{
-         return <td>{each}<br></br> {courseHandler(each)}</td>
+        thursday.map((each,index)=>{
+         return <td>{each}<br></br> {courseTH[index]}</td>
          })
       }
     </tr>
     <tr>
       <td>Friday</td>
       {
-        friday.map(each=>{
-         return <td>{each} <br></br>{courseHandler(each)}</td>
+        friday.map((each,index)=>{
+         return <td>{each} <br></br>{courseF[index]}</td>
          })
       }
     </tr>

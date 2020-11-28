@@ -9,16 +9,29 @@ function Body() {
         <div className='body'>
             <h3>Select The Year</h3>
             <div className='Buttons'>
+
             <div className='button'>
             <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
-             Demo
+             B.tech 1st Year
              </Dropdown.Toggle>
 
              <Dropdown.Menu>
-             <Dropdown.Item><Link to='/btech2chemical'>Batch C</Link></Dropdown.Item>
+             <Dropdown.Item><Link to='/'>Chemical+Petroleum</Link></Dropdown.Item>
+             </Dropdown.Menu>
+            </Dropdown>
+            </div>
+               
+            <div className='button'>
+            <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+             B.tech 2nd Year
+             </Dropdown.Toggle>
+
+             <Dropdown.Menu>
+             <Dropdown.Item><Link to='/btech2chemical'>Chemical19</Link></Dropdown.Item>
              
-             <Dropdown.Item><Link to='/btech2petroleum'>Batch P</Link></Dropdown.Item>
+             <Dropdown.Item><Link to='/btech2petroleum'>Petroleum19</Link></Dropdown.Item>
              </Dropdown.Menu>
             </Dropdown>
             </div>
@@ -30,7 +43,7 @@ function Body() {
              </Dropdown.Toggle>
 
              <Dropdown.Menu>
-             <Dropdown.Item href="#/action-1">Chemical</Dropdown.Item>
+             <Dropdown.Item><Link to='/btech3chemical'>Chemical</Link></Dropdown.Item>
              <Dropdown.Item href="#/action-2">Petroleum</Dropdown.Item>
              </Dropdown.Menu>
             </Dropdown>

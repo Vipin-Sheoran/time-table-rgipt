@@ -5,6 +5,7 @@ export const initialState={
     MfacultyAt12:[],
     MfacultyAt03:[],
     MfacultyAt04:[],
+    MfacultyAt05:[],
 
     TfacultyAt9:[],
     TfacultyAt10:[],
@@ -12,6 +13,7 @@ export const initialState={
     TfacultyAt12:[],
     TfacultyAt03:[],
     TfacultyAt04:[],
+    TfacultyAt05:[],
 
     WfacultyAt9:[],
     WfacultyAt10:[],
@@ -19,6 +21,7 @@ export const initialState={
     WfacultyAt12:[],
     WfacultyAt03:[],
     WfacultyAt04:[],
+    WfacultyAt05:[],
 
     THfacultyAt9:[],
     THfacultyAt10:[],
@@ -26,6 +29,7 @@ export const initialState={
     THfacultyAt12:[],
     THfacultyAt03:[],
     THfacultyAt04:[],
+    THfacultyAt05:[],
 
     FfacultyAt9:[],
     FfacultyAt10:[],
@@ -33,6 +37,47 @@ export const initialState={
     FfacultyAt12:[],
     FfacultyAt03:[],
     FfacultyAt04:[],
+    FfacultyAt05:[],
+
+    COMfacultyAt9:[],
+    COMfacultyAt10:[],
+    COMfacultyAt11:[],
+    COMfacultyAt12:[],
+    COMfacultyAt03:[],
+    COMfacultyAt04:[],
+    COMfacultyAt05:[],
+
+    COTfacultyAt9:[],
+    COTfacultyAt10:[],
+    COTfacultyAt11:[],
+    COTfacultyAt12:[],
+    COTfacultyAt03:[],
+    COTfacultyAt04:[],
+    COTfacultyAt05:[],
+
+    COWfacultyAt9:[],
+    COWfacultyAt10:[],
+    COWfacultyAt11:[],
+    COWfacultyAt12:[],
+    COWfacultyAt03:[],
+    COWfacultyAt04:[],
+    COWfacultyAt05:[],
+
+    COTHfacultyAt9:[],
+    COTHfacultyAt10:[],
+    COTHfacultyAt11:[],
+    COTHfacultyAt12:[],
+    COTHfacultyAt03:[],
+    COTHfacultyAt04:[],
+    COTHfacultyAt05:[],
+
+    COFfacultyAt9:[],
+    COFfacultyAt10:[],
+    COFfacultyAt11:[],
+    COFfacultyAt12:[],
+    COFfacultyAt03:[],
+    COFfacultyAt04:[],
+    COFfacultyAt05:[],
 
     CMfacultyAt9:[],
     CMfacultyAt10:[],
@@ -40,6 +85,7 @@ export const initialState={
     CMfacultyAt12:[],
     CMfacultyAt03:[],
     CMfacultyAt04:[],
+    CMfacultyAt05:[],
 
     CTfacultyAt9:[],
     CTfacultyAt10:[],
@@ -47,6 +93,7 @@ export const initialState={
     CTfacultyAt12:[],
     CTfacultyAt03:[],
     CTfacultyAt04:[],
+    CTfacultyAt05:[],
 
     CWfacultyAt9:[],
     CWfacultyAt10:[],
@@ -54,6 +101,7 @@ export const initialState={
     CWfacultyAt12:[],
     CWfacultyAt03:[],
     CWfacultyAt04:[],
+    CWfacultyAt05:[],
 
     CTHfacultyAt9:[],
     CTHfacultyAt10:[],
@@ -61,6 +109,7 @@ export const initialState={
     CTHfacultyAt12:[],
     CTHfacultyAt03:[],
     CTHfacultyAt04:[],
+    CTHfacultyAt05:[],
 
     CFfacultyAt9:[],
     CFfacultyAt10:[],
@@ -68,6 +117,7 @@ export const initialState={
     CFfacultyAt12:[],
     CFfacultyAt03:[],
     CFfacultyAt04:[],
+    CFfacultyAt05:[],
 
     PMfacultyAt9:[],
     PMfacultyAt10:[],
@@ -75,6 +125,7 @@ export const initialState={
     PMfacultyAt12:[],
     PMfacultyAt03:[],
     PMfacultyAt04:[],
+    PMfacultyAt05:[],
 
     PTfacultyAt9:[],
     PTfacultyAt10:[],
@@ -82,6 +133,7 @@ export const initialState={
     PTfacultyAt12:[],
     PTfacultyAt03:[],
     PTfacultyAt04:[],
+    PTfacultyAt05:[],
 
     PWfacultyAt9:[],
     PWfacultyAt10:[],
@@ -89,6 +141,7 @@ export const initialState={
     PWfacultyAt12:[],
     PWfacultyAt03:[],
     PWfacultyAt04:[],
+    PWfacultyAt05:[],
 
     PTHfacultyAt9:[],
     PTHfacultyAt10:[],
@@ -96,6 +149,7 @@ export const initialState={
     PTHfacultyAt12:[],
     PTHfacultyAt03:[],
     PTHfacultyAt04:[],
+    PTHfacultyAt05:[],
 
     PFfacultyAt9:[],
     PFfacultyAt10:[],
@@ -103,12 +157,101 @@ export const initialState={
     PFfacultyAt12:[],
     PFfacultyAt03:[],
     PFfacultyAt04:[],
+    PFfacultyAt05:[],
+
+    POMfacultyAt9:[],
+    POMfacultyAt10:[],
+    POMfacultyAt11:[],
+    POMfacultyAt12:[],
+    POMfacultyAt03:[],
+    POMfacultyAt04:[],
+    POMfacultyAt05:[],
+
+    POTfacultyAt9:[],
+    POTfacultyAt10:[],
+    POTfacultyAt11:[],
+    POTfacultyAt12:[],
+    POTfacultyAt03:[],
+    POTfacultyAt04:[],
+    POTfacultyAt05:[],
+
+    POWfacultyAt9:[],
+    POWfacultyAt10:[],
+    POWfacultyAt11:[],
+    POWfacultyAt12:[],
+    POWfacultyAt03:[],
+    POWfacultyAt04:[],
+    POWfacultyAt05:[],
+
+    POTHfacultyAt9:[],
+    POTHfacultyAt10:[],
+    POTHfacultyAt11:[],
+    POTHfacultyAt12:[],
+    POTHfacultyAt03:[],
+    POTHfacultyAt04:[],
+    POTHfacultyAt05:[],
+
+    POFfacultyAt9:[],
+    POFfacultyAt10:[],
+    POFfacultyAt11:[],
+    POFfacultyAt12:[],
+    POFfacultyAt03:[],
+    POFfacultyAt04:[],
+    POFfacultyAt05:[],
+
+    C3MfacultyAt9:[],
+    C3MfacultyAt10:[],
+    C3MfacultyAt11:[],
+    C3MfacultyAt12:[],
+    C3MfacultyAt03:[],
+    C3MfacultyAt04:[],
+    C3MfacultyAt05:[],
+
+    C3TfacultyAt9:[],
+    C3TfacultyAt10:[],
+    C3TfacultyAt11:[],
+    C3TfacultyAt12:[],
+    C3TfacultyAt03:[],
+    C3TfacultyAt04:[],
+    C3TfacultyAt05:[],
+
+    C3WfacultyAt9:[],
+    C3WfacultyAt10:[],
+    C3WfacultyAt11:[],
+    C3WfacultyAt12:[],
+    C3WfacultyAt03:[],
+    C3WfacultyAt04:[],
+    C3WfacultyAt05:[],
+
+    C3THfacultyAt9:[],
+    C3THfacultyAt10:[],
+    C3THfacultyAt11:[],
+    C3THfacultyAt12:[],
+    C3THfacultyAt03:[],
+    C3THfacultyAt04:[],
+    C3THfacultyAt05:[],
+
+    C3FfacultyAt9:[],
+    C3FfacultyAt10:[],
+    C3FfacultyAt11:[],
+    C3FfacultyAt12:[],
+    C3FfacultyAt03:[],
+    C3FfacultyAt04:[],
+    C3FfacultyAt05:[],
+
+    Pdisabled:[],
+
 
 }
 
 const reducer=(state,action)=>{
 
     switch(action.type){
+        case'DISABLED':
+        return{
+          ...state,
+          Pdisabled:[...state.Pdisabled,action.item]
+        }
         case'MADD_TO_9':
         return{
             ...state,
@@ -138,6 +281,11 @@ const reducer=(state,action)=>{
         return{
             ...state,
             MfacultyAt04:[...state.MfacultyAt04,action.item]
+        }
+        case'MADD_TO_05':
+        return{
+            ...state,
+            MfacultyAt05:[...state.MfacultyAt05,action.item]
         }
 
         case'TADD_TO_9':
@@ -170,6 +318,11 @@ const reducer=(state,action)=>{
             ...state,
             TfacultyAt04:[...state.TfacultyAt04,action.item]
         }
+        case'TADD_TO_05':
+        return{
+            ...state,
+            TfacultyAt05:[...state.TfacultyAt05,action.item]
+        }
 
         case'WADD_TO_9':
         return{
@@ -200,6 +353,11 @@ const reducer=(state,action)=>{
         return{
             ...state,
             WfacultyAt04:[...state.WfacultyAt04,action.item]
+        }
+        case'WADD_TO_05':
+        return{
+            ...state,
+            WfacultyAt05:[...state.WfacultyAt05,action.item]
         }
 
         case'THADD_TO_9':
@@ -232,6 +390,11 @@ const reducer=(state,action)=>{
             ...state,
             THfacultyAt04:[...state.THfacultyAt04,action.item]
         }
+        case'THADD_TO_05':
+        return{
+            ...state,
+            THfacultyAt05:[...state.THfacultyAt05,action.item]
+        }
 
         case'FADD_TO_9':
         return{
@@ -262,6 +425,192 @@ const reducer=(state,action)=>{
         return{
             ...state,
             FfacultyAt04:[...state.FfacultyAt04,action.item]
+        }
+        case'FADD_TO_05':
+        return{
+            ...state,
+            FfacultyAt05:[...state.FfacultyAt05,action.item]
+        }
+
+
+        case'COMADD_TO_9':
+        return{
+            ...state,
+            COMfacultyAt9:[...state.COMfacultyAt9,action.item]
+        }
+        case'COMADD_TO_10':
+        return{
+            ...state,
+            COMfacultyAt10:[...state.COMfacultyAt10,action.item]
+        }
+        case'COMADD_TO_11':
+        return{
+            ...state,
+            COMfacultyAt11:[...state.COMfacultyAt11,action.item]
+        }
+        case'COMADD_TO_12':
+        return{
+            ...state,
+            COMfacultyAt12:[...state.COMfacultyAt12,action.item]
+        }
+        case'COMADD_TO_03':
+        return{
+            ...state,
+            COMfacultyAt03:[...state.COMfacultyAt03,action.item]
+        }
+        case'COMADD_TO_04':
+        return{
+            ...state,
+            COMfacultyAt04:[...state.COMfacultyAt04,action.item]
+        }
+        case'COMADD_TO_05':
+        return{
+            ...state,
+            COMfacultyAt05:[...state.COMfacultyAt05,action.item]
+        }
+
+        case'COTADD_TO_9':
+        return{
+            ...state,
+            COTfacultyAt9:[...state.COTfacultyAt9,action.item]
+        }
+        case'COTADD_TO_10':
+        return{
+            ...state,
+            COTfacultyAt10:[...state.COTfacultyAt10,action.item]
+        }
+        case'COTADD_TO_11':
+        return{
+            ...state,
+            COTfacultyAt11:[...state.COTfacultyAt11,action.item]
+        }
+        case'COTADD_TO_12':
+        return{
+            ...state,
+            COTfacultyAt12:[...state.COTfacultyAt12,action.item]
+        }
+        case'COTADD_TO_03':
+        return{
+            ...state,
+            COTfacultyAt03:[...state.COTfacultyAt03,action.item]
+        }
+        case'COTADD_TO_04':
+        return{
+            ...state,
+            COTfacultyAt04:[...state.COTfacultyAt04,action.item]
+        }
+        case'COTADD_TO_05':
+        return{
+            ...state,
+            COTfacultyAt05:[...state.COTfacultyAt05,action.item]
+        }
+
+        case'COWADD_TO_9':
+        return{
+            ...state,
+            COWfacultyAt9:[...state.COWfacultyAt9,action.item]
+        }
+        case'COWADD_TO_10':
+        return{
+            ...state,
+            COWfacultyAt10:[...state.COWfacultyAt10,action.item]
+        }
+        case'COWADD_TO_11':
+        return{
+            ...state,
+            COWfacultyAt11:[...state.COWfacultyAt11,action.item]
+        }
+        case'COWADD_TO_12':
+        return{
+            ...state,
+            COWfacultyAt12:[...state.COWfacultyAt12,action.item]
+        }
+        case'COWADD_TO_03':
+        return{
+            ...state,
+            COWfacultyAt03:[...state.COWfacultyAt03,action.item]
+        }
+        case'COWADD_TO_04':
+        return{
+            ...state,
+            COWfacultyAt04:[...state.COWfacultyAt04,action.item]
+        }
+        case'COWADD_TO_05':
+        return{
+            ...state,
+            COWfacultyAt05:[...state.COWfacultyAt05,action.item]
+        }
+
+        case'COTHADD_TO_9':
+        return{
+            ...state,
+            COTHfacultyAt9:[...state.COTHfacultyAt9,action.item]
+        }
+        case'COTHADD_TO_10':
+        return{
+            ...state,
+            COTHfacultyAt10:[...state.COTHfacultyAt10,action.item]
+        }
+        case'COTHADD_TO_11':
+        return{
+            ...state,
+            COTHfacultyAt11:[...state.COTHfacultyAt11,action.item]
+        }
+        case'COTHADD_TO_12':
+        return{
+            ...state,
+            COTHfacultyAt12:[...state.COTHfacultyAt12,action.item]
+        }
+        case'COTHADD_TO_03':
+        return{
+            ...state,
+            COTHfacultyAt03:[...state.COTHfacultyAt03,action.item]
+        }
+        case'COTHADD_TO_04':
+        return{
+            ...state,
+            COTHfacultyAt04:[...state.COTHfacultyAt04,action.item]
+        }
+        case'COTHADD_TO_05':
+        return{
+            ...state,
+            COTHfacultyAt05:[...state.COTHfacultyAt05,action.item]
+        }
+
+        case'COFADD_TO_9':
+        return{
+            ...state,
+            COFfacultyAt9:[...state.COFfacultyAt9,action.item]
+        }
+        case'COFADD_TO_10':
+        return{
+            ...state,
+            COFfacultyAt10:[...state.COFfacultyAt10,action.item]
+        }
+        case'COFADD_TO_11':
+        return{
+            ...state,
+            COFfacultyAt11:[...state.COFfacultyAt11,action.item]
+        }
+        case'COFADD_TO_12':
+        return{
+            ...state,
+            COFfacultyAt12:[...state.COFfacultyAt12,action.item]
+        }
+        case'COFADD_TO_03':
+        return{
+            ...state,
+            COFfacultyAt03:[...state.COFfacultyAt03,action.item]
+        }
+        case'COFADD_TO_04':
+        return{
+            ...state,
+            COFfacultyAt04:[...state.COFfacultyAt04,action.item]
+        }
+        case'COFADD_TO_05':
+        return{
+            ...state,
+            COFfacultyAt05:[...state.COFfacultyAt05,action.item]
         }
 
 
@@ -297,6 +646,11 @@ const reducer=(state,action)=>{
             ...state,
             PMfacultyAt04:[...state.PMfacultyAt04,action.item]
         }
+        case'PMADD_TO_05':
+        return{
+            ...state,
+            PMfacultyAt05:[...state.PMfacultyAt05,action.item]
+        }
 
         case'PTADD_TO_9':
         return{
@@ -327,6 +681,11 @@ const reducer=(state,action)=>{
         return{
             ...state,
             PTfacultyAt04:[...state.PTfacultyAt04,action.item]
+        }
+        case'PTADD_TO_05':
+        return{
+            ...state,
+            PTfacultyAt05:[...state.PTfacultyAt05,action.item]
         }
 
         case'PWADD_TO_9':
@@ -359,6 +718,11 @@ const reducer=(state,action)=>{
             ...state,
             PWfacultyAt04:[...state.PWfacultyAt04,action.item]
         }
+        case'PWADD_TO_05':
+        return{
+            ...state,
+            PWfacultyAt05:[...state.PWfacultyAt05,action.item]
+        }
 
         case'PTHADD_TO_9':
         return{
@@ -389,6 +753,11 @@ const reducer=(state,action)=>{
         return{
             ...state,
             PTHfacultyAt04:[...state.PTHfacultyAt04,action.item]
+        }
+        case'PTHADD_TO_05':
+        return{
+            ...state,
+            PTHfacultyAt05:[...state.PTHfacultyAt05,action.item]
         }
 
         case'PFADD_TO_9':
@@ -421,6 +790,193 @@ const reducer=(state,action)=>{
             ...state,
             PFfacultyAt04:[...state.PFfacultyAt04,action.item]
         }
+        case'PFADD_TO_05':
+        return{
+            ...state,
+            PFfacultyAt05:[...state.PFfacultyAt05,action.item]
+        }
+
+
+        case'POMADD_TO_9':
+        return{
+            ...state,
+            POMfacultyAt9:[...state.POMfacultyAt9,action.item]
+        }
+        case'POMADD_TO_10':
+        return{
+            ...state,
+            POMfacultyAt10:[...state.POMfacultyAt10,action.item]
+        }
+        case'POMADD_TO_11':
+        return{
+            ...state,
+            POMfacultyAt11:[...state.POMfacultyAt11,action.item]
+        }
+        case'POMADD_TO_12':
+        return{
+            ...state,
+            POMfacultyAt12:[...state.POMfacultyAt12,action.item]
+        }
+        case'POMADD_TO_03':
+        return{
+            ...state,
+            POMfacultyAt03:[...state.POMfacultyAt03,action.item]
+        }
+        case'POMADD_TO_04':
+        return{
+            ...state,
+            POMfacultyAt04:[...state.POMfacultyAt04,action.item]
+        }
+        case'POMADD_TO_05':
+        return{
+            ...state,
+            POMfacultyAt05:[...state.POMfacultyAt05,action.item]
+        }
+
+        case'POTADD_TO_9':
+        return{
+            ...state,
+            POTfacultyAt9:[...state.POTfacultyAt9,action.item]
+        }
+        case'POTADD_TO_10':
+        return{
+            ...state,
+            POTfacultyAt10:[...state.POTfacultyAt10,action.item]
+        }
+        case'POTADD_TO_11':
+        return{
+            ...state,
+            POTfacultyAt11:[...state.POTfacultyAt11,action.item]
+        }
+        case'POTADD_TO_12':
+        return{
+            ...state,
+            POTfacultyAt12:[...state.POTfacultyAt12,action.item]
+        }
+        case'POTADD_TO_03':
+        return{
+            ...state,
+            POTfacultyAt03:[...state.POTfacultyAt03,action.item]
+        }
+        case'POTADD_TO_04':
+        return{
+            ...state,
+            POTfacultyAt04:[...state.POTfacultyAt04,action.item]
+        }
+        case'POTADD_TO_05':
+        return{
+            ...state,
+            POTfacultyAt05:[...state.POTfacultyAt05,action.item]
+        }
+
+        case'POWADD_TO_9':
+        return{
+            ...state,
+            POWfacultyAt9:[...state.POWfacultyAt9,action.item]
+        }
+        case'POWADD_TO_10':
+        return{
+            ...state,
+            POWfacultyAt10:[...state.POWfacultyAt10,action.item]
+        }
+        case'POWADD_TO_11':
+        return{
+            ...state,
+            POWfacultyAt11:[...state.POWfacultyAt11,action.item]
+        }
+        case'POWADD_TO_12':
+        return{
+            ...state,
+            POWfacultyAt12:[...state.POWfacultyAt12,action.item]
+        }
+        case'POWADD_TO_03':
+        return{
+            ...state,
+            POWfacultyAt03:[...state.POWfacultyAt03,action.item]
+        }
+        case'POWADD_TO_04':
+        return{
+            ...state,
+            POWfacultyAt04:[...state.POWfacultyAt04,action.item]
+        }
+        case'POWADD_TO_05':
+        return{
+            ...state,
+            POWfacultyAt05:[...state.POWfacultyAt05,action.item]
+        }
+
+        case'POTHADD_TO_9':
+        return{
+            ...state,
+            POTHfacultyAt9:[...state.POTHfacultyAt9,action.item]
+        }
+        case'POTHADD_TO_10':
+        return{
+            ...state,
+            POTHfacultyAt10:[...state.POTHfacultyAt10,action.item]
+        }
+        case'POTHADD_TO_11':
+        return{
+            ...state,
+            POTHfacultyAt11:[...state.POTHfacultyAt11,action.item]
+        }
+        case'POTHADD_TO_12':
+        return{
+            ...state,
+            POTHfacultyAt12:[...state.POTHfacultyAt12,action.item]
+        }
+        case'POTHADD_TO_03':
+        return{
+            ...state,
+            POTHfacultyAt03:[...state.POTHfacultyAt03,action.item]
+        }
+        case'POTHADD_TO_04':
+        return{
+            ...state,
+            POTHfacultyAt04:[...state.POTHfacultyAt04,action.item]
+        }
+        case'POTHADD_TO_05':
+        return{
+            ...state,
+            POTHfacultyAt05:[...state.POTHfacultyAt05,action.item]
+        }
+
+        case'POFADD_TO_9':
+        return{
+            ...state,
+            POFfacultyAt9:[...state.POFfacultyAt9,action.item]
+        }
+        case'POFADD_TO_10':
+        return{
+            ...state,
+            POFfacultyAt10:[...state.POFfacultyAt10,action.item]
+        }
+        case'POFADD_TO_11':
+        return{
+            ...state,
+            POFfacultyAt11:[...state.POFfacultyAt11,action.item]
+        }
+        case'POFADD_TO_12':
+        return{
+            ...state,
+            POFfacultyAt12:[...state.POFfacultyAt12,action.item]
+        }
+        case'POFADD_TO_03':
+        return{
+            ...state,
+            POFfacultyAt03:[...state.POFfacultyAt03,action.item]
+        }
+        case'POFADD_TO_04':
+        return{
+            ...state,
+            POFfacultyAt04:[...state.POFfacultyAt04,action.item]
+        }
+        case'POFADD_TO_05':
+        return{
+            ...state,
+            POFfacultyAt05:[...state.POFfacultyAt05,action.item]
+        }
+
 
 
 
@@ -454,6 +1010,11 @@ const reducer=(state,action)=>{
             ...state,
             CMfacultyAt04:[...state.CMfacultyAt04,action.item]
         }
+        case'CMADD_TO_05':
+        return{
+            ...state,
+            CMfacultyAt05:[...state.CMfacultyAt05,action.item]
+        }
 
         case'CTADD_TO_9':
         return{
@@ -484,6 +1045,11 @@ const reducer=(state,action)=>{
         return{
             ...state,
             CTfacultyAt04:[...state.CTfacultyAt04,action.item]
+        }
+        case'CTADD_TO_05':
+        return{
+            ...state,
+            CTfacultyAt05:[...state.CTfacultyAt05,action.item]
         }
 
         case'CWADD_TO_9':
@@ -516,6 +1082,11 @@ const reducer=(state,action)=>{
             ...state,
             CWfacultyAt04:[...state.CWfacultyAt04,action.item]
         }
+        case'CWADD_TO_05':
+        return{
+            ...state,
+            CWfacultyAt05:[...state.CWfacultyAt05,action.item]
+        }
 
         case'CTHADD_TO_9':
         return{
@@ -547,6 +1118,11 @@ const reducer=(state,action)=>{
             ...state,
             CTHfacultyAt04:[...state.CTHfacultyAt04,action.item]
         }
+        case'CTHADD_TO_05':
+        return{
+            ...state,
+            CTHfacultyAt05:[...state.CTHfacultyAt05,action.item]
+        }
 
         case'CFADD_TO_9':
         return{
@@ -577,6 +1153,191 @@ const reducer=(state,action)=>{
         return{
             ...state,
             CFfacultyAt04:[...state.CFfacultyAt04,action.item]
+        }
+        case'CFADD_TO_05':
+        return{
+            ...state,
+            CFfacultyAt05:[...state.CFfacultyAt05,action.item]
+        }
+
+        case'C3MADD_TO_9':
+        return{
+            ...state,
+            C3MfacultyAt9:[...state.C3MfacultyAt9,action.item]
+        }
+        case'C3MADD_TO_10':
+        return{
+            ...state,
+            C3MfacultyAt10:[...state.C3MfacultyAt10,action.item]
+        }
+        case'C3MADD_TO_11':
+        return{
+            ...state,
+            C3MfacultyAt11:[...state.C3MfacultyAt11,action.item]
+        }
+        case'C3MADD_TO_12':
+        return{
+            ...state,
+            C3MfacultyAt12:[...state.C3MfacultyAt12,action.item]
+        }
+        case'C3MADD_TO_03':
+        return{
+            ...state,
+            C3MfacultyAt03:[...state.C3MfacultyAt03,action.item]
+        }
+        case'C3MADD_TO_04':
+        return{
+            ...state,
+            C3MfacultyAt04:[...state.C3MfacultyAt04,action.item]
+        }
+        case'C3MADD_TO_05':
+        return{
+            ...state,
+            C3MfacultyAt05:[...state.C3MfacultyAt05,action.item]
+        }
+
+        case'C3TADD_TO_9':
+        return{
+            ...state,
+            C3TfacultyAt9:[...state.C3TfacultyAt9,action.item]
+        }
+        case'C3TADD_TO_10':
+        return{
+            ...state,
+            C3TfacultyAt10:[...state.C3TfacultyAt10,action.item]
+        }
+        case'C3TADD_TO_11':
+        return{
+            ...state,
+            C3TfacultyAt11:[...state.C3TfacultyAt11,action.item]
+        }
+        case'C3TADD_TO_12':
+        return{
+            ...state,
+            C3TfacultyAt12:[...state.C3TfacultyAt12,action.item]
+        }
+        case'C3TADD_TO_03':
+        return{
+            ...state,
+            C3TfacultyAt03:[...state.C3TfacultyAt03,action.item]
+        }
+        case'C3TADD_TO_04':
+        return{
+            ...state,
+            C3TfacultyAt04:[...state.C3TfacultyAt04,action.item]
+        }
+        case'C3TADD_TO_05':
+        return{
+            ...state,
+            C3TfacultyAt05:[...state.C3TfacultyAt05,action.item]
+        }
+
+        case'C3WADD_TO_9':
+        return{
+            ...state,
+            C3WfacultyAt9:[...state.C3WfacultyAt9,action.item]
+        }
+        case'C3WADD_TO_10':
+        return{
+            ...state,
+            C3WfacultyAt10:[...state.C3WfacultyAt10,action.item]
+        }
+        case'C3WADD_TO_11':
+        return{
+            ...state,
+            C3WfacultyAt11:[...state.C3WfacultyAt11,action.item]
+        }
+        case'C3WADD_TO_12':
+        return{
+            ...state,
+            C3WfacultyAt12:[...state.C3WfacultyAt12,action.item]
+        }
+        case'C3WADD_TO_03':
+        return{
+            ...state,
+            C3WfacultyAt03:[...state.C3WfacultyAt03,action.item]
+        }
+        case'C3WADD_TO_04':
+        return{
+            ...state,
+            C3WfacultyAt04:[...state.C3WfacultyAt04,action.item]
+        }
+        case'C3WADD_TO_05':
+        return{
+            ...state,
+            C3WfacultyAt05:[...state.C3WfacultyAt05,action.item]
+        }
+
+        case'C3THADD_TO_9':
+        return{
+            ...state,
+            C3THfacultyAt9:[...state.C3THfacultyAt9,action.item]
+        }
+        case'C3THADD_TO_10':
+        return{
+            ...state,
+            C3THfacultyAt10:[...state.C3THfacultyAt10,action.item]
+        }
+        case'C3THADD_TO_11':
+        return{
+            ...state,
+            C3THfacultyAt11:[...state.C3THfacultyAt11,action.item]
+        }
+        case'C3THADD_TO_12':
+        return{
+            ...state,
+            C3THfacultyAt12:[...state.C3THfacultyAt12,action.item]
+        }
+        case'C3THADD_TO_03':
+        return{
+            ...state,
+            C3THfacultyAt03:[...state.C3THfacultyAt03,action.item]
+        }
+        case'C3THADD_TO_04':
+        return{
+            ...state,
+            C3THfacultyAt04:[...state.C3THfacultyAt04,action.item]
+        }
+        case'C3THADD_TO_05':
+        return{
+            ...state,
+            C3THfacultyAt05:[...state.C3THfacultyAt05,action.item]
+        }
+
+        case'C3FADD_TO_9':
+        return{
+            ...state,
+            C3FfacultyAt9:[...state.C3FfacultyAt9,action.item]
+        }
+        case'C3FADD_TO_10':
+        return{
+            ...state,
+            C3FfacultyAt10:[...state.C3FfacultyAt10,action.item]
+        }
+        case'C3FADD_TO_11':
+        return{
+            ...state,
+            C3FfacultyAt11:[...state.C3FfacultyAt11,action.item]
+        }
+        case'C3FADD_TO_12':
+        return{
+            ...state,
+            C3FfacultyAt12:[...state.C3FfacultyAt12,action.item]
+        }
+        case'C3FADD_TO_03':
+        return{
+            ...state,
+            C3FfacultyAt03:[...state.C3FfacultyAt03,action.item]
+        }
+        case'C3FADD_TO_04':
+        return{
+            ...state,
+            C3FfacultyAt04:[...state.C3FfacultyAt04,action.item]
+        }
+        case'C3FADD_TO_05':
+        return{
+            ...state,
+            C3FfacultyAt05:[...state.C3FfacultyAt05,action.item]
         }
     }
     
